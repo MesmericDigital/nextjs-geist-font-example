@@ -1,0 +1,38 @@
+{
+    "name": "Core",
+    "description": "BBP Core Base Module - Provides core functionality and utilities",
+    "version": "1.0.0",
+    "provider": "BBPCore\\Modules\\Core\\Providers\\CoreServiceProvider",
+    "dependencies": [],
+    "assets": {
+        "css": {
+            "frontend": {
+                "core": "core.css"
+            },
+            "admin": {
+                "admin": "admin.css"
+            }
+        },
+        "js": {
+            "frontend": {
+                "core": "core.js"
+            },
+            "admin": {
+                "admin": "admin.js"
+            }
+        }
+    },
+    "features": {
+        "admin_dashboard": true,
+        "settings_management": true,
+        "module_management": true,
+        "cache_management": true,
+        "logging": true
+    },
+    "settings": {
+        "enable_logging": true,
+        "enable_caching": true,
+        "debug_mode": false,
+        "admin_bar_menu": true
+    }
+}
