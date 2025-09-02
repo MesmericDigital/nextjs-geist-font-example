@@ -1,0 +1,43 @@
+{
+    "name": "WooCommerce",
+    "description": "BBP Core WooCommerce Integration Module",
+    "version": "1.0.0",
+    "provider": "BBPCore\\Modules\\WooCommerce\\Providers\\WooCommerceServiceProvider",
+    "dependencies": [
+        "woocommerce/woocommerce"
+    ],
+    "assets": {
+        "css": {
+            "frontend": {
+                "main": "main.css"
+            },
+            "admin": {
+                "admin": "admin.css"
+            }
+        },
+        "js": {
+            "frontend": {
+                "main": "main.js"
+            },
+            "admin": {
+                "admin": "admin.js"
+            }
+        }
+    },
+    "hooks": {
+        "actions": [
+            "woocommerce_init",
+            "woocommerce_loaded"
+        ],
+        "filters": [
+            "woocommerce_product_types",
+            "woocommerce_checkout_fields"
+        ]
+    },
+    "settings": {
+        "enable_custom_product_types": true,
+        "enable_checkout_modifications": true,
+        "enable_custom_settings": true,
+        "enable_advanced_pricing": false
+    }
+}
