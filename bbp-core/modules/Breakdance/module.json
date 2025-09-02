@@ -1,0 +1,61 @@
+{
+    "name": "Breakdance",
+    "description": "BBP Core Breakdance Builder Integration Module",
+    "version": "1.0.0",
+    "provider": "BBPCore\\Modules\\Breakdance\\Providers\\BreakdanceServiceProvider",
+    "dependencies": [
+        "breakdance/breakdance"
+    ],
+    "assets": {
+        "css": {
+            "frontend": {
+                "elements": "elements.css",
+                "animations": "animations.css"
+            },
+            "admin": {
+                "builder": "builder.css"
+            }
+        },
+        "js": {
+            "frontend": {
+                "elements": "elements.js",
+                "interactions": "interactions.js"
+            },
+            "admin": {
+                "builder": "builder.js"
+            }
+        }
+    },
+    "elements": {
+        "product_grid": {
+            "name": "BBP Product Grid",
+            "category": "ecommerce",
+            "icon": "grid",
+            "supports": ["responsive", "animations"]
+        },
+        "cart_widget": {
+            "name": "BBP Cart Widget",
+            "category": "ecommerce",
+            "icon": "shopping-cart",
+            "supports": ["responsive", "real-time"]
+        },
+        "checkout_form": {
+            "name": "BBP Checkout Form",
+            "category": "ecommerce",
+            "icon": "credit-card",
+            "supports": ["responsive", "validation"]
+        },
+        "product_configurator": {
+            "name": "BBP Product Configurator",
+            "category": "ecommerce",
+            "icon": "settings",
+            "supports": ["responsive", "dynamic"]
+        }
+    },
+    "settings": {
+        "enable_ecommerce_elements": true,
+        "enable_animations": true,
+        "enable_custom_css": true,
+        "cache_elements": true
+    }
+}
